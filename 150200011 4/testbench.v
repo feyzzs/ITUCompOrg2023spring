@@ -58,11 +58,11 @@ module test2_a(
         
     initial begin   
     clk=0;
-    en = 1 ;  funsel[0] = 1  ; funsel[1] = 0  ; i = 8'b00001111 ;low_high = 0;#50;    //ilk 7 sayý yükleme
-    en = 1 ;  funsel[0] = 1  ; funsel[1] = 0  ; i = 8'b00011111 ;low_high = 1;#50;    //7-14 yüðkleme
-    en = 1 ;  funsel[0] = 0  ; funsel[1] = 1  ; i = 8'b00001111 ;low_high = 0;#50;  //çýkarma
+    en = 1 ;  funsel[0] = 1  ; funsel[1] = 0  ; i = 8'b00001111 ;low_high = 0;#50;    //ilk 7 sayÃ½ yÃ¼kleme
+    en = 1 ;  funsel[0] = 1  ; funsel[1] = 0  ; i = 8'b00011111 ;low_high = 1;#50;    //7-14 yÃ¼Ã°kleme
+    en = 1 ;  funsel[0] = 0  ; funsel[1] = 1  ; i = 8'b00001111 ;low_high = 0;#50;  //Ã§Ã½karma
     en = 1 ;  funsel[0] = 1  ; funsel[1] = 1  ; i = 8'b00001111 ;low_high = 0;#50;    //toplama
-    en = 1 ;  funsel[0] = 0  ; funsel[1] = 0  ; i = 8'b00001111 ;low_high = 0;#50;    //sýfýrlama
+    en = 1 ;  funsel[0] = 0  ; funsel[1] = 0  ; i = 8'b00001111 ;low_high = 0;#50;    //sÃ½fÃ½rlama
     en = 0 ;  funsel[0] = 1  ; funsel[1] = 1  ; i = 8'b00001111 ;low_high = 0;#50;    //enable 0
     $finish;
     end
